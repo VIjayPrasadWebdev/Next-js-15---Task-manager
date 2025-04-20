@@ -52,11 +52,11 @@ export default async function Navbar() {
           <Profile />
 
           {user ? (
-            <LogoutLink
-              className={`cursor-pointer hidden md:block ${buttonVariants()}`}
-            >
-              Logout
-            </LogoutLink>
+            <div className="hidden md:flex items-center gap-2">
+              <LogoutLink className={`cursor-pointer  ${buttonVariants()}`}>
+                Logout
+              </LogoutLink>
+            </div>
           ) : (
             <div className="hidden md:flex items-center gap-2">
               <LoginLink className={`cursor-pointer ${buttonVariants()}`}>
