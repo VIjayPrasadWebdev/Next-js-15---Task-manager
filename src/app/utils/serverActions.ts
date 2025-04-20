@@ -51,3 +51,13 @@ export async function EditData(formData: FormData) {
 
   return redirect("/dashboard");
 }
+
+export async function DeleteData(formData: FormData) {
+  let id = formData.get("id");
+  await prisma.taskmanager.delete({
+    where: {
+      id: id as string,
+    },
+  });
+  redirect("/dashboard");
+}

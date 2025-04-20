@@ -54,7 +54,9 @@ export default async function Profile() {
               />
             )}
           </Button>
-          <p>{user ? user.given_name : "Guest User"}</p>
+          <p className="text-black dark:text-white">
+            {user ? user.given_name : "Guest User"}
+          </p>
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

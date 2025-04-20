@@ -5,7 +5,7 @@ export default function CardDetails({ data, check }: any) {
   let { id, title, content, authorname, createdAt, picture } = data;
   return (
     <>
-      <div className="space-y-1">
+      <div className="space-y-1 flex justify-start items-start flex-col gap-2">
         <p className="text-sm font-medium leading-none">{title}</p>
         <p
           className={`text-sm ${
