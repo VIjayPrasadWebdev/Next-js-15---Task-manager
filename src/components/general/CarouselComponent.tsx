@@ -1,5 +1,5 @@
 "use client";
-
+import dynamic from "next/dynamic";
 import React, { useEffect, useRef } from "react";
 import {
   Carousel,
@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Lottie from "lottie-react";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import { aboutdata } from "@/app/utils/aboutdata";
 import { Card, CardContent } from "@/components/ui/card";
 
