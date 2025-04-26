@@ -64,7 +64,7 @@ export default async function Profile() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            Profile
+            <Link href="/profile">Profile</Link>
             <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
@@ -78,7 +78,12 @@ export default async function Profile() {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem>GitHub</DropdownMenuItem>
+        <DropdownMenuItem>
+          <Link href="https://github.com/VIjayPrasadWebdev/Next-js-15-task-manager">
+            GitHub
+          </Link>
+          <DropdownMenuShortcut>⌘G</DropdownMenuShortcut>
+        </DropdownMenuItem>
         <DropdownMenuItem>Support</DropdownMenuItem>
 
         {permission?.isGranted && (
