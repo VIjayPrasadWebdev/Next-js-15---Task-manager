@@ -13,21 +13,21 @@ import { aboutdata } from "@/app/utils/aboutdata";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function CarouselComponent() {
-  const carouselRef = useRef<HTMLDivElement>(null);
+  //   const carouselRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const nextButton = carouselRef.current?.querySelector(
-        "[data-carousel-next]"
-      ) as HTMLElement;
-      nextButton?.click();
-    }, 3000);
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       const nextButton = carouselRef.current?.querySelector(
+  //         "[data-carousel-next]"
+  //       ) as HTMLElement;
+  //       nextButton?.click();
+  //     }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //     return () => clearInterval(interval);
+  //   }, []);
 
   return (
-    <Carousel ref={carouselRef} className="relative p-6 md:mt-0 mt-12">
+    <Carousel className="relative p-6 md:mt-0 mt-12">
       <CarouselContent className="flex gap-8">
         {aboutdata.map((card) => (
           <CarouselItem
