@@ -9,7 +9,7 @@ import {
   RegisterLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
-import { CodeXml } from "lucide-react";
+import LogoComponent from "./LogoComponent";
 
 export default async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -23,20 +23,22 @@ export default async function Navbar() {
         dark:border-gray-700 rounded-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] 
         flex justify-between items-center"
       >
-        <div className="flex items-center gap-2">
-          <Button
+        <div className="flex items-center gap-1">
+          {/* <Button
             size="icon"
             variant="outline"
-            className=" cursor-pointer text-black dark:text-white"
-          >
-            <CodeXml className="w-5 h-5" />
-          </Button>
-          <p className="hidden md:block text-lg font-semibold text-black dark:text-white">
+            className=" cursor-pointer text-black dark:text-white p-0"
+          > */}
+          <Link href="/" className="h-12 w-12 p-0">
+            <LogoComponent />
+          </Link>
+          {/* </Button> */}
+          <p className="hidden md:block text-lg  text-black dark:text-white font-dm font-normal">
             Next Task Manager
           </p>
         </div>
 
-        <div className="hidden md:flex text-white dark:text-white items-center gap-9">
+        <div className="font-poppins font-medium hidden md:flex text-white dark:text-white items-center gap-9">
           <Link className="text-black dark:text-white" href="/">
             Home
           </Link>

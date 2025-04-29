@@ -25,5 +25,5 @@ export async function GET() {
       },
     });
   }
-  return NextResponse.redirect("http://localhost:3001/dashboard");
+  return NextResponse.redirect("http://localhost:3000/dashboard");
 }

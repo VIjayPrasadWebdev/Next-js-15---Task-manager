@@ -36,7 +36,7 @@ export default function CarouselComponent() {
           >
             <Card
               className="flex flex-col h-full w-full items-center justify-center text-center p-6 
-                         bg-transparent border-2"
+                         bg-transparent shadow-2xl"
             >
               <Lottie
                 animationData={card.animation}
@@ -44,7 +44,9 @@ export default function CarouselComponent() {
                 className="h-36 w-36"
               />
               <CardContent className="flex flex-col items-center gap-2">
-                <h3 className="text-lg font-semibold">{card.title}</h3>
+                <h3 className="text-lg font-poppins font-medium">
+                  {card.title}
+                </h3>
                 <p className=" text-sm">{card.description}</p>
               </CardContent>
             </Card>
@@ -52,7 +54,7 @@ export default function CarouselComponent() {
         ))}
       </CarouselContent>
 
-      <div className="  carousel-btns  max-md:right-6 absolute md:right-12 md:-top-2 right-12 -top-2 flex items-center gap-2">
+      <div className="  carousel-btns   absolute md:right-12 md:-top-2  right-12 -top-2 flex items-center gap-2">
         <CarouselPrevious data-carousel-prev />
         <CarouselNext data-carousel-next />
       </div>
