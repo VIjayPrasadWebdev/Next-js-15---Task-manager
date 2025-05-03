@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,15 +9,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Adminaccess } from "@/app/utils/adminaccess";
 import Link from "next/link";
-import Checked from "./MarkedContent";
 import CardDetails from "./CardDetails";
 import MarkedContent from "./MarkedContent";
 import DeleteCard from "./DeleteCard";
 import { toast } from "sonner";
 export default function TaskCard({ data, permission }: any) {
   // console.log(Image);
+
   let { id } = data;
 
   let [check, handlecheck] = useState(false);
@@ -25,7 +24,7 @@ export default function TaskCard({ data, permission }: any) {
   return (
     <Card className="w-[350px]">
       <CardHeader className="flex items-start justify-start flex-col ">
-        <CardTitle className="flex items-center justify-between w-full">
+        <CardTitle className="flex items-center justify-between w-full font-MONTE">
           {permission?.isGranted ? (
             <div className="admin-control flex items-center justify-between w-full">
               <p>Forge a New Quest</p>
@@ -54,7 +53,7 @@ export default function TaskCard({ data, permission }: any) {
             "Forge a New Quest"
           )}
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="font-LATO">
           Begin your journey — one task at a time.
         </CardDescription>
       </CardHeader>

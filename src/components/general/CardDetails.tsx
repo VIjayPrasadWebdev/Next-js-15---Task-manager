@@ -1,17 +1,18 @@
-import React from "react";
+import React, { use } from "react";
 import Image from "next/image";
 import { buttonVariants } from "../ui/button";
 export default function CardDetails({ data, check }: any) {
-  let { id, title, content, authorname, createdAt, picture } = data;
+  let { title, content, authorname, createdAt, picture } = data;
+
   return (
     <>
       <div className="space-y-1 flex justify-start items-start flex-col gap-2">
         <p className="text-sm font-medium leading-none">{title}</p>
         <p
-          className={`text-sm ${
+          className={`text-sm text-left ${
             check
               ? "line-through text-muted-foreground"
-              : "text-muted-foreground"
+              : "text-muted-foreground "
           }`}
         >
           {content}

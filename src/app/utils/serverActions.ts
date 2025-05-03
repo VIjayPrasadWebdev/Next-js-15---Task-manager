@@ -9,6 +9,7 @@ export async function createData(formData: FormData) {
   let user = await getUser();
   let title = formData.get("title")?.toString();
   let content = formData.get("content")?.toString();
+  let authorimage = formData.get("url")?.toString();
 
   await prisma.taskmanager.create({
     data: {
@@ -16,6 +17,7 @@ export async function createData(formData: FormData) {
       content: content as string,
       authorid: user.id as string,
       authorname: user.given_name as string,
+      authorimage: authorimage as string,
     },
   });
   redirect("/dashboard");

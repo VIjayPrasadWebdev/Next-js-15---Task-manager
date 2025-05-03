@@ -28,17 +28,30 @@ export default function TaskForm() {
             <article className="form-container flex flex-col justify-start items-start gap-6">
               <div className="input-container flex   items-center gap-3 w-full">
                 <Label className="w-[72px]">Title</Label>
-                <Input type="text" placeholder="Task title" name="title" />
+                <Input
+                  type="text"
+                  placeholder="Task title"
+                  name="title"
+                  required
+                />
               </div>
               <div className="input-container flex  items-center gap-3 w-full">
                 <Label className="w-[72px]">Content</Label>
                 <div className="description flex flex-col items-center gap-3 w-full">
-                  <Textarea placeholder="Task content " name="content" />
+                  <Textarea
+                    placeholder="Task content "
+                    name="content"
+                    required
+                  />
                   <p className="text-sm text-muted-foreground">
                     Add details about the task – what needs to be done, any
                     relevant notes, links, or instructions."
                   </p>
                 </div>
+              </div>
+              <div className="input-container flex   items-center gap-3 w-full">
+                <Label className="w-[72px]">Image</Label>
+                <Input type="url" name="url" required />
               </div>
               {/* <div className="input-container flex items-center gap-3 w-full">
                 <Label className="w-[72px]">Upload Image</Label>

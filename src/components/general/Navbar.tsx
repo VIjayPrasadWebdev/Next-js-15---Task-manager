@@ -10,7 +10,6 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
 import { CodeXml } from "lucide-react";
-
 export default async function Navbar() {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
@@ -31,12 +30,12 @@ export default async function Navbar() {
           >
             <CodeXml className="w-5 h-5" />
           </Button>
-          <p className="hidden md:block text-lg font-semibold text-black dark:text-white">
+          <p className=" font-DM hidden md:block text-lg font-medium text-black dark:text-white">
             Next Task Manager
           </p>
         </div>
 
-        <div className="hidden md:flex text-white dark:text-white items-center gap-9">
+        <div className="hidden md:flex text-white dark:text-white items-center gap-9 font-POPPINS font-medium">
           <Link className="text-black dark:text-white" href="/">
             Home
           </Link>

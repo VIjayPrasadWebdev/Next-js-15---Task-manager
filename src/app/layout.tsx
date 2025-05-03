@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/general/Navbar";
 import { ThemeProvider } from "./utils/themeprovider";
 import { Toaster } from "sonner";
-const geistSans = Geist({
+export const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -26,7 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <link rel="icon" type="images/Task.png" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

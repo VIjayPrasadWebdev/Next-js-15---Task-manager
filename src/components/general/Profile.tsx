@@ -14,7 +14,7 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import {
   LoginLink,
   LogoutLink,
@@ -31,7 +31,7 @@ export default async function Profile() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
+      <DropdownMenuTrigger asChild className="font-LATO">
         <div className="info-container flex items-center gap-2">
           <Button variant="outline" size="icon" className="cursor-pointer">
             {user ? (
@@ -54,7 +54,7 @@ export default async function Profile() {
               />
             )}
           </Button>
-          <p className="text-black dark:text-white">
+          <p className="text-black dark:text-white font-MONTE">
             {user ? user.given_name : "Guest User"}
           </p>
         </div>
@@ -72,8 +72,8 @@ export default async function Profile() {
             <DropdownMenuShortcut>⌘D</DropdownMenuShortcut>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            Settings
-            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+            <Link href="/about">About</Link>
+            <DropdownMenuShortcut>⌘A</DropdownMenuShortcut>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
@@ -84,7 +84,7 @@ export default async function Profile() {
           </Link>
           <DropdownMenuShortcut>⌘G</DropdownMenuShortcut>
         </DropdownMenuItem>
-        <DropdownMenuItem>Support</DropdownMenuItem>
+        <DropdownMenuItem disabled>Support</DropdownMenuItem>
 
         {permission?.isGranted && (
           <>

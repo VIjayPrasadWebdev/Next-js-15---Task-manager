@@ -1,9 +1,10 @@
+import AdminComponent from "@/components/general/AdminComponent";
 import React from "react";
 
 export default function Admin() {
   return (
-    <div className="h-screen flex justify-center items-center">
-      I'm a m*** f*** admin
-    </div>
+    <main className="h-screen flex justify-center items-center">
+      <AdminComponent />
+    </main>
   );
 }

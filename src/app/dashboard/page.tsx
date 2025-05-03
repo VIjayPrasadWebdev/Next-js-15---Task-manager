@@ -23,7 +23,9 @@ export default async function Dashboard() {
 
       <section className="w-full h-full">
         <div className=" btn-container flex items-center justify-start gap-3.5 mr-auto md:flex-row flex-col p-12  md:p-24">
-          <h2 className="text-xl font-normal">Create your own quest</h2>
+          <h2 className="text-xl font-normal font-POPPINS">
+            Create your own quest
+          </h2>
           <Link
             href="/dashboard/create"
             className={`cursor-pointer ${buttonVariants()} px-3  z-10`}

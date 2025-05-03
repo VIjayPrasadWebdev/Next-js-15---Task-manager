@@ -15,11 +15,11 @@ export default function HomeComponent() {
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] bg-indigo-300 dark:bg-indigo-700 opacity-25 rounded-full blur-[150px] pointer-events-none z-0" />
 
       <div className="text-desc flex flex-col items-center justify-center gap-2.5 mt-12 md:mt-0">
-        <h1 className="text-4xl sm:text-5xl font-bold text-black dark:text-white mb-4 z-10">
+        <h1 className="font-DM  text-4xl sm:text-5xl font-medium text-black dark:text-white mb-4 z-10">
           Seamless Task Management for <br /> Teams and Individuals
         </h1>
 
-        <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-6">
+        <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg mb-6 font-LATO">
           In today’s fast-paced world, staying organized and on track can be
           challenging, whether you’re working alone or as part of a team.
         </p>
