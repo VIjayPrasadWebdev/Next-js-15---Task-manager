@@ -24,7 +24,7 @@ export default async function Navbar() {
         flex justify-between items-center"
       >
         <div className="flex items-center gap-1">
-          {/* <Button
+          <Button
             size="icon"
             variant="outline"
             className=" cursor-pointer text-black dark:text-white"
@@ -36,7 +36,7 @@ export default async function Navbar() {
           </p>
         </div>
 
-        <div className="hidden md:flex text-white dark:text-white items-center gap-9">
+        <div className="font-POPPINS font-normal hidden md:flex text-white dark:text-white items-center gap-9">
           <Link className="text-black dark:text-white" href="/">
             Home
           </Link>
