@@ -4,7 +4,7 @@ import ourteamAnimation from "../../../public/lottiefiles/ourteam.json";
 import dataAnimation from "../../../public/lottiefiles/datastatistics.json";
 import dedicatedteamAnimation from "../../../public/lottiefiles/dedicated_team.json";
 import supportAnimation from "../../../public/lottiefiles/support.json";
-export let aboutdata = [
+export const aboutdata = [
   {
     id: 1,
     title: "Our Mission",

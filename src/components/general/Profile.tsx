@@ -1,3 +1,4 @@
+"use server";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,11 +24,12 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/use-mobile";
 export default async function Profile() {
   let { getUser, getPermission } = getKindeServerSession();
   let permission = await getPermission("delete:task");
   let user = await getUser();
-  console.log("permission", permission);
+  // console.log("permission", permission);
 
   return (
     <DropdownMenu>
