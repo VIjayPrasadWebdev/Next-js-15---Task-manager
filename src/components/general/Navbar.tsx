@@ -31,7 +31,7 @@ export default async function Navbar() {
           >
             <CodeXml className="w-5 h-5" />
           </Button>
-          <p className="hidden md:block text-lg font-semibold text-black dark:text-white">
+          <p className="font-GABARITO hidden md:block text-lg font-medium text-black dark:text-white">
             Next Task Manager
           </p>
         </div>

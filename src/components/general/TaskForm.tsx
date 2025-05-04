@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -12,7 +11,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { createData } from "@/app/utils/serverActions";
 import SubmitButton from "./SubmitButton";
-import { toast } from "sonner";
+
 export default function TaskForm() {
   return (
     <section className="w-full h-screen flex justify-center items-center">
@@ -49,10 +48,10 @@ export default function TaskForm() {
                   </p>
                 </div>
               </div>
-              <div className="input-container flex   items-center gap-3 w-full">
+              {/* <div className="input-container flex   items-center gap-3 w-full">
                 <Label className="w-[72px]">Image</Label>
                 <Input type="url" name="url" required />
-              </div>
+              </div> */}
               {/* <div className="input-container flex items-center gap-3 w-full">
                 <Label className="w-[72px]">Upload Image</Label>
                 <Input type="file" name="upload" className="cursor-pointer" />
