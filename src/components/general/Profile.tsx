@@ -30,6 +30,7 @@ export default async function Profile() {
   let permission = await getPermission("delete:task");
   let user = await getUser();
   // console.log("permission", permission);
+  // console.log(user.picture);
 
   return (
     <DropdownMenu>

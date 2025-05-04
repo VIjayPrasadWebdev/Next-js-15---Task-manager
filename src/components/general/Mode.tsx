@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 export default function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  console.log("resolved theme", resolvedTheme);
+  // console.log("resolved theme", resolvedTheme);
 
   useEffect(() => {
     setMounted(true);
