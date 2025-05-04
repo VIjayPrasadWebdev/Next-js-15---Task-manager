@@ -27,7 +27,7 @@ export default function CarouselComponent() {
   //   }, []);
 
   return (
-    <Carousel className="relative p-6 md:mt-0 mt-12">
+    <Carousel className="relative p-6 md:mt-0 mt-12  ">
       <CarouselContent className="flex gap-8">
         {aboutdata.map((card) => (
           <CarouselItem
@@ -44,17 +44,19 @@ export default function CarouselComponent() {
                 className="h-44 w-44 object-cover"
               />
               <CardContent className="flex flex-col items-center gap-2">
-                <h3 className="text-lg font-semibold">{card.title}</h3>
-                <p className=" text-sm">{card.description}</p>
+                <h3 className="text-lg font-medium font-POPPINS">
+                  {card.title}
+                </h3>
+                <p className=" text-sm font-LATO">{card.description}</p>
               </CardContent>
             </Card>
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      <div className="  carousel-btns  max-md:right-6 absolute md:right-12 md:-top-2 right-12 -top-2 flex items-center gap-2">
-        <CarouselPrevious data-carousel-prev />
-        <CarouselNext data-carousel-next />
+      <div className="  carousel-btns   absolute md:right-18 md:-top-2 right-16 -top-2 flex items-center gap-2">
+        <CarouselPrevious data-carousel-prev className="cursor-pointer" />
+        <CarouselNext data-carousel-next className="cursor-pointer" />
       </div>
     </Carousel>
   );

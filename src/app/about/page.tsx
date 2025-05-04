@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
   return (
     <main
-      className="h-screen w-full py-20 px-4 text-center shadow-lg   
+      className="md:h-screen h-auto w-full py-20 px-4 text-center shadow-lg   
       relative bg-gradient-to-br gap-6 
       from-[#f3f4f6] via-white to-[#f3f4f6] text-black overflow-hidden
       dark:from-[#0e0e0e] dark:via-[#1a1a1a] dark:to-[#0e0e0e] dark:text-white"
