@@ -26,7 +26,7 @@ export default function TaskCard({ data, permission }: any) {
       <CardHeader className="flex items-start justify-start flex-col ">
         <CardTitle className="flex items-center justify-between w-full font-MONTE">
           {permission?.isGranted ? (
-            <div className="admin-control flex items-center justify-between w-full">
+            <div className="font-GABARITO admin-control flex items-center justify-between w-full">
               <p>Forge a New Quest</p>
               <div className="btn-container flex items-center gap-3">
                 <Link

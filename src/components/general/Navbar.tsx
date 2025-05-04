@@ -23,7 +23,7 @@ export default async function Navbar() {
         dark:border-gray-700 rounded-xl shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] 
         flex justify-between items-center"
       >
-        <div className="flex items-center gap-1">
+        <Link href="/" className="flex items-center gap-4">
           <Button
             size="icon"
             variant="outline"
@@ -34,7 +34,7 @@ export default async function Navbar() {
           <p className="font-GABARITO hidden md:block text-lg font-medium text-black dark:text-white">
             Next Task Manager
           </p>
-        </div>
+        </Link>
 
         <div className="font-POPPINS font-normal hidden md:flex text-white dark:text-white items-center gap-9">
           <Link className="text-black dark:text-white" href="/">

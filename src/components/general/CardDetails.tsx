@@ -7,9 +7,9 @@ export default function CardDetails({ data, check }: any) {
   return (
     <>
       <div className="space-y-1 flex justify-start items-start flex-col gap-2">
-        <p className="text-sm font-medium leading-none">{title}</p>
+        <p className="font-POPPINS text-sm font-medium leading-none">{title}</p>
         <p
-          className={`text-sm text-left ${
+          className={`font-LATO text-sm text-left ${
             check
               ? "line-through text-muted-foreground"
               : "text-muted-foreground "
