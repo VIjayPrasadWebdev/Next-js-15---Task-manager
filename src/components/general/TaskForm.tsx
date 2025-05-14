@@ -41,6 +41,7 @@ export default function TaskForm() {
                     placeholder="Task content "
                     name="content"
                     required
+                    maxLength={100}
                   />
                   <p className="text-sm text-muted-foreground">
                     Add details about the task – what needs to be done, any

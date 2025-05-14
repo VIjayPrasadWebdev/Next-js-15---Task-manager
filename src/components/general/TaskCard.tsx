@@ -22,7 +22,7 @@ export default function TaskCard({ data, permission }: any) {
   let [check, handlecheck] = useState(false);
 
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[350px] ">
       <CardHeader className="flex items-start justify-start flex-col ">
         <CardTitle className="flex items-center justify-between w-full font-MONTE">
           {permission?.isGranted ? (
