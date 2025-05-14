@@ -14,7 +14,7 @@ export default function AdminComponent() {
 
   return (
     <main className="md:h-screen h-auto p-6  flex w-screen justify-center items-center flex-col gap-3">
-      <section className="mt-18   h-full grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-3 w-3/6 mx-auto">
+      <section className="mt-18   h-full grid md:grid-cols-3 grid-cols-1 justify-center items-center gap-3 md:w-3/6 w-5/6 mx-auto">
         <TotalUsersComponent />
         <TotalActiveUsersComponent />
         <TotalSubscribedUsersComponent />
