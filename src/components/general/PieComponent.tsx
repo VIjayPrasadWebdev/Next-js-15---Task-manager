@@ -54,8 +54,10 @@ export function PieComponent() {
   return (
     <Card className="flex flex-col bg-transparent md:w-[750px] w-auto">
       <CardHeader className="items-center pb-0">
-        <CardTitle>Managing Users</CardTitle>
-        <CardDescription>April - Present 2025</CardDescription>
+        <CardTitle className="text-left">Managing Users</CardTitle>
+        <CardDescription className="text-left">
+          April - Present 2025
+        </CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
